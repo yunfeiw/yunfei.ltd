@@ -7,45 +7,55 @@
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
     <title>yunfei</title>
     <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/index.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <ul class="goods_list clear_float">
-            <xxx>
-                <a href="">
+    <div class="container" id="container">
+        <!-- <ul class="goods_list clear_float">
+            <li>
+                <a href="http://app1.yunfei.ltd" target="__brank">
                     <img src="../images/list/js.jpg" alt="js">
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <img src="../images/list/html.jpg" alt="html">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="../images/list/css.jpg" alt="css">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="../images/list/node.jpg" alt="node">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="../images/list/dva.jpg" alt="dva">
-                </a>
-            </li>
-        </ul>
+        </ul> -->
     </div>
     <script>
-        // var obj = {
-        //     cool:function(){
-        //         console.log(1)
-        //     }
-        // }
-       
+        var yunfei = new RenderList({
+            root: document.getElementById("container"),
+            list: [{
+                    title: "js",
+                    href:"#",
+                    src: "../images/list/js.jpg"
+                },
+                {
+                    title: "html",
+                    href:"#",
+                    src: "../images/list/html.jpg"
+                },
+                {
+                    title: "css",
+                    href:"#",
+                    src: "../images/list/css.jpg"
+                },
+                {
+                    title: "node",
+                    href:"#",
+                    src: "../images/list/node.jpg"
+                },
+                {
+                    title: "dva",
+                    href:"#",
+                    src: "../images/list/dva.jpg"
+                },
+                {
+                    title: "umi",
+                    href:"#",
+                    src: "../images/list/umi.png"
+                },
+            ],
+            placeImg: "../images/placeImg.jpg"
+        })
     </script>
 </body>
 
